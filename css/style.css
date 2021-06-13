@@ -1,0 +1,268 @@
+@import url('utilities.css');
+
+:root {
+    --color_1:#000000;
+    --color_3:#282C2F;
+    --color_2:#222326;
+    --color_4:#393D40;
+    --color_5:#7D848A;
+    --color_6:#D9D9D9;
+    --color_7:#f2f2f2;
+    --color_8:#FF565D;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    text-transform: uppercase;
+    background-color: var(--color_2);
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* menuBar */
+menu.left {
+    z-index: 99999;
+    width: 10%;
+    background-color: transparent;
+    height: 100vh;
+    margin-left: 0;
+    transition: 2s ease-in-out linear;
+}
+
+menu.left .menu_list {
+    position: absolute;
+    display: none;
+    width: 80%;
+    margin-left: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+menu.left .menu_list ul {
+    list-style-type: none;
+}
+
+menu.left .menu_list ul a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: 2s ease-in-out linear;
+    color: var(--color_2);
+}
+
+menu.left .menu_list ul a:hover  {
+    color: var(--color_5);
+}
+
+
+.hamburger-menu {
+    width: 50px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .6s;
+    cursor: pointer;
+}
+
+menu.left .hamburger-menu {
+    margin-left: 10rem;
+}
+
+.hamburger-menu div {
+    width: 35px;
+    background: var(--color_7);
+    height: 3px;
+    margin: 8px 0;
+    border-radius: 30px;
+    transition: .6s;
+}
+
+@media(max-width:767px) {
+    .hamburger-menu {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        transform: translateX(-5%) translateY(-5%);
+    }
+
+}
+
+/* header section */
+header {
+    position: fixed;
+    width: 100%;
+    height: 6vh;
+    z-index: 10;
+    top: 0;
+    background-color: transparent;
+    font-size: 0.8rem;
+}
+
+/* side menu */
+menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-left: 3rem;
+    width: 6%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+section {
+    padding: 0;
+    background-color: var(--color_2);
+}
+
+/* right side menu */
+menu.right {
+    top: 0;
+    position: fixed;
+    left: 90%;
+    transform: translate(-90%);
+    width: 6%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+menu.right .profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+menu.right .profile a>img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* middle display contant */
+section.display {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+section.display .card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+section.display .card_wrapper .card {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+section.display .card_wrapper .card>img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* style only for card hover */
+.hoverText {
+    width: 100%;
+    height: 100%;
+}
+
+.hoverText a {
+    z-index: 99;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color_7);
+    display: none;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hoverText:hover img {
+    opacity: 25%;
+}
+
+.hoverText:hover a {
+    display: block;
+    animation-name: show;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* footer */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: transparent;
+}
+
+footer .info {
+    color: var(--color_7);
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 2rem 2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+footer .info .page_name {
+    color: var(--color_7);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 1;
+}
+
+footer .info a:hover {
+    opacity: 0;
+    cursor: url('../image/left-arrow.png'), auto;
+}
+
+footer .info .count_slide {
+    left: 5%;
+    position: absolute;
+}
+
+footer .info .thumbnail {
+    right: 5%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+footer .info .thumbnail>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<title>Harshoots</title>
+<!-- favicon -->
+<link rel="icon"type="image/png"sizes="32x32"href="image/favicon-32x32.png">
+<!-- stylesheet link -->
+<link rel="stylesheet"type="text/css"href="css/aboutStyle.css">
+<link rel="stylesheet"type="text/css"href="css/style.css">
+<link rel="stylesheet"href="css/showCase.css">
+<!-- all cdn link -->
+<link rel="stylesheet"type="text/css"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect"href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"rel="stylesheet">
+<link rel="stylesheet"href="css/slick.css">
+<link rel="stylesheet"href="css/slick-theme.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css"rel="stylesheet">
+</head>
+
+<body onload="preLoader()">
+<!-- Preloader -->
+<div id="loader"></div>
+
+<!-- header -->
+<header>
+<div class="container ">
+<nav class="itmes-center">
+<h1>Harshoots</h1>
+</nav>
+</div>
+</header>
+
+<!-- left menu bar -->
+<menu class="left">
+<div id="h" class="hamburger-menu" onclick="myFunction()">
+<div></div>
+<div></div> 
+<div></div>
+</div>
+<div class="menu_list">
+<ul>
+<li><a href="home.html">featured</a></li>
+<li><a href="nature.html">nature</a></li>
+<li><a href="wedding.html">wedding</a></li>
+<li><a href="modele.html">modele</a></li>
+<li><a href="street.html">street</a></li>
+<li><a href="landscape.html">landscape</a></li>
+<li><a href="portrait.html">portrait</a></li>
+</ul>
+</div>
+</menu>
+
+<!-- middle photo display  -->
+<section class="displaySlide">
+<div class="container">
+<div class="buttonArrow flex">
+<div class="prevArrow"></div>
+<div class="nextArrow"></div>
+</div>
+<div class="slideshow">
+<div class="card">
+<img src="Data/Photography/DSC_0147.jpg" data-slide-num="1">
+</div>
+<div class="card">
+<img src="Data/Photographyhy/harshoots___BMrrBe-gGbe___.jpg"data-slide-num="2">
+</div>
+<div class="card">
+<img src="Data/Photography/harshoots___BWiPcQIgSCD___.jpg"data-slide-num="3">
+</div>
+<div class="card">
+<img src="Data/Photography/harshoots___BYGgY-mgYof___.jpg"data-slide-num="4">
+</div>
+<div class="card">
+<img src="Data/Photography/harshoots___BZGsi1VniSo___.jpg"data-slide-num="5">
+</div>
+<div class="card">
+<img src="Data/Photography/harshoots___BZqJyYGHkBk___.jpg"data-slide-num="6">
+</div>
+<div class="card">
+<img src="Data/Photography/DSC_0147.jpg"data-slide-num="7">
+</div>
+<div class="card">
+<img src="Data/Photography/IMG-20201125-WA0043.jpg"data-slide-num="8">
+</div>
+</div>
+</div>
+</section>
+
+<section class="displayThumb">
+<div class="container">
+<div class="card_wrapper_thumnail">
+<div class="card">
+<img src="Data/Photography/DSC_0147.jpg" data-slide-num="1">
+</div>
+<div class="card">
+<img src="Data/Photographyhy/harshoots___BMrrBe-gGbe___.jpg"data-slide-num="2">
+</div>
+<div class="card">
+<img src="Data/Photography/harshoots___BWiPcQIgSCD___.jpg"data-slide-num="3">
+</div>
+<div class="card">
+<img src="Data/Photography/harshoots___BYGgY-mgYof___.jpg"data-slide-num="4">
+</div>
+<div class="card">
+<img src="Data/Photography/harshoots___BZGsi1VniSo___.jpg"data-slide-num="5">
+</div>
+<div class="card">
+<img src="Data/Photography/harshoots___BZqJyYGHkBk___.jpg"data-slide-num="6">
+</div>
+<div class="card">
+<img src="Data/Photography/DSC_0147.jpg"data-slide-num="7">
+</div>
+<div class="card">
+<img src="Data/Photography/IMG-20201125-WA0043.jpg"data-slide-num="8">
+</div>
+</div>
+</div>
+</section>
+
+<!-- right profile menu -->
+<menu class="right">
+<div class="profile">
+<a href="about.html"><img src="image/profile.svg"alt=""></a>
+</div>
+</menu>
+
+<!-- bottom footer -->
+<footer>
+<div class="info container flex">
+<div class="count_slide">
+<span class="slide-num"></span> / <span class="slide_total"></span>
+</div>
+<a href="home.html"class="page_name">street</a>
+<div class="thumbnail"id="thumChange"onclick="styleChange()">
+<img id="Image_Id" src="image/thumbnail.svg" alt="thumbnail" onclick="imagefun()">
+</div>
+</div>
+</footer>
+
+<!-- sliderAnimation -->
+
+<script src="javaScript/slick.min.js"></script>
+<!-- all javaScript link and cdn link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="javaScript/main.js"></script>
+<script src="javaScript/animation.js"></script>
+</body>
+
+</html>
