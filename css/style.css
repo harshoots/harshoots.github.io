@@ -30,7 +30,7 @@ body {
 
 /* menuBar */
 menu.left {
-    z-index: 99999;
+    z-index: 99;
     width: 10%;
     background-color: transparent;
     height: 100vh;
@@ -66,13 +66,13 @@ menu.left .menu_list ul a:hover  {
 
 
 .hamburger-menu {
-    width: 50px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     display: block;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: .6s;
+    transition: .6s all ease-in-out;
     cursor: pointer;
 }
 
@@ -89,16 +89,6 @@ menu.left .hamburger-menu {
     transition: .6s;
 }
 
-@media(max-width:767px) {
-    .hamburger-menu {
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        transform: translateX(-5%) translateY(-5%);
-    }
-
-}
-
 /* header section */
 header {
     position: fixed;
@@ -112,10 +102,10 @@ header {
 
 /* side menu */
 menu {
+    z-index: 5;
     position: fixed;
     left: 0;
     top: 0;
-    margin-left: 3rem;
     width: 6%;
     height: 100vh;
     background-color: transparent;
@@ -128,28 +118,25 @@ section {
 
 /* right side menu */
 menu.right {
-    top: 0;
-    position: fixed;
-    left: 90%;
-    transform: translate(-90%);
-    width: 6%;
-    height: 100vh;
-    background-color: transparent;
-}
-
-menu.right .profile {
-    position: absolute;
+    height: 35px;
+    width: 35px;
+    display: block;
     top: 50%;
-    left: 50%;
-    width: 30px;
-    height: 30px;
+    transform: translate(-50%, -50%);
+    transition: .6s;
+    z-index: 9;
     cursor: pointer;
 }
 
-menu.right .profile a>img {
+menu.right a {
+    height: 35px;
+    width: 55px;
+    z-index: 6;
+}
+
+menu.right a> img {
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: contain;
 }
 
@@ -181,20 +168,18 @@ section.display .card_wrapper .card>img {
 /* style only for card hover */
 .hoverText {
     width: 100%;
+    position: absolute;
     height: 100%;
 }
 
 .hoverText a {
-    z-index: 99;
-    position: absolute;
-    font-size: 1rem;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
     font-weight: 400;
     color: var(--color_7);
     display: none;
     text-decoration: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .hoverText:hover img {
@@ -210,11 +195,9 @@ section.display .card_wrapper .card>img {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
-
 }
 
 /* footer */
@@ -265,4 +248,82 @@ footer .info .thumbnail>img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/* Breakpoints */
+@media(max-width:1024px) {
+    menu {
+        height: 10vh;
+    }
+
+    .hamburger-menu {
+        top: 2%;
+        left: 0;
+        transform: translateX(-0%) translateY(-2%);
+    }
+
+    menu.left .hamburger-menu {
+        margin-left: 2rem;
+    }
+
+    .hamburger-menu div {
+        width: 35px;
+        height: 3px;
+        margin: 8px 0;
+    }
+
+    menu.right {
+        top: 3%;
+        left: 97%;
+        transform: translate(-97%, -3%);
+    }
+
+    nav h1 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    section.display .card_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    menu.left .menu_list {
+        margin-left: 5rem;
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -50%);
+    }
+
+    .hoverText a {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media(max-width:576px) {
+    nav h1 {
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
+
+    .hamburger-menu {
+        top: 2%;
+    }
+
+    menu.right {
+        top: 3%;
+        left: 97%;
+        transform: translate(-97%, -3%);
+    }
+
+    section.display .card_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .hoverText a {
+        font-size: 1rem;
+    }
+
 }
