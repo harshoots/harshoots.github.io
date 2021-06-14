@@ -26,6 +26,19 @@ let countDiv = document.querySelector(".card").length;
         loop: true,
         prevArrow: ".prevArrow",
         nextArrow: ".nextArrow",
+       
+        responsive: [
+      {
+       breakpoint: 900,
+         settings: {
+         arrows: true,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 2000,
+         }
+    }
+]
     });
 });
 
