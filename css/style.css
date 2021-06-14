@@ -225,10 +225,11 @@ footer .info .page_name {
     opacity: 1;
 }
 
-footer .info a:hover {
+footer .info .page_name:hover {
     opacity: 0;
-    cursor: url('../image/left-arrow.png'), auto;
+    cursor: url('../image/undo.png'), auto;
 }
+
 
 footer .info .count_slide {
     left: 5%;
