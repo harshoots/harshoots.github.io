@@ -80,3 +80,17 @@ section.displaySlide .buttonArrow .nextArrow {
     width: 50%;
     cursor: url('../image/right-arrow.png'), auto;
 }
+
+@media(max-width:1024px) {
+    section.displayThumb .card_wrapper_thumnail {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media(max-width:576px) {
+    section.displayThumb .card_wrapper_thumnail {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
