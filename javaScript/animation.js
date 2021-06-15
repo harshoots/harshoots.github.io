@@ -1,19 +1,4 @@
-
-
-// $(document).ready(function() {
-//     var countDiv = document.getElementsByClassName('card').length;
-//     var slide_total = document.getElementsByClassName("slide_total");
-//     slide_total.textContent = countDiv;
-// });
-
-let slide_num = document.querySelector(".slide-num");
-let displaySlide = document.querySelector(".displaySlide");
-let displayThumb = document.querySelector(".displayThumb");
-let total_Slide = document.querySelector(".slide_total");
-let countDiv = document.querySelector(".card").length;
-
-
-// Image slide function
+// Im =age slide function
 
    $(document).ready(function() {
     $('.slideshow').slick({
@@ -26,8 +11,8 @@ let countDiv = document.querySelector(".card").length;
         loop: true,
         prevArrow: ".prevArrow",
         nextArrow: ".nextArrow",
-       
-        responsive: [
+
+  responsive: [
       {
        breakpoint: 900,
          settings: {
@@ -39,11 +24,13 @@ let countDiv = document.querySelector(".card").length;
          }
     }
 ]
-    });
+});
 });
 
 
 function styleChange () {
+let displaySlide = document.querySelector(".displaySlide");
+let displayThumb = document.querySelector(".displayThumb");
    // body... 
    if(displaySlide.style.display === "block") {
       displaySlide.style.display = 'none';
@@ -66,5 +53,8 @@ Image_Id.src = "image/thumbnail.svg";
 }
 
 
-
-
+// let slide_num_show =
+let countDiv = document.querySelector(".slideshow").childElementCount;
+document.querySelector(".slide_total").textContent = countDiv;
+let slide_num = document.querySelector(".data").dataset.slide.num;
+document.querySelector(".slide_total").textContent = slide_num;
