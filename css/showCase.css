@@ -1,26 +1,29 @@
 @import url('utilities.css');
+
 :root {
-    --color_1: #000000;
-    --color_3: #282C2F;
-    --color_2: #222326;
-    --color_4: #393D40;
-    --color_5: #7D848A;
-    --color_6: #D9D9D9;
-    --color_7: #f2f2f2;
-    --color_8: #FF565D;
+    --color_1:#000000;
+    --color_3:#282C2F;
+    --color_2:#222326;
+    --color_4:#393D40;
+    --color_5:#7D848A;
+    --color_6:#D9D9D9;
+    --color_7:#f2f2f2;
+    --color_8:#FF565D;
 }
 
 .container {
     position: relative;
 }
 
-section.displaySlide,section.displayThumb{
+section.displaySlide,
+section.displayThumb {
     display: block;
     margin-top: 6rem;
     margin-bottom: 4rem;
     background-color: transparent;
 }
-section.displayThumb{
+
+section.displayThumb {
     display: none;
 }
 
@@ -47,7 +50,7 @@ section.displaySlide .slideshow {
     z-index: 5;
     top: 0;
     width: 100%;
-    margin-left: 0%;       
+    margin-left: 0%;
     position: relative;
 }
 
@@ -86,11 +89,24 @@ section.displaySlide .buttonArrow .nextArrow {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    section.displaySlide,
+    section.displayThumb {
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+    }
+
 }
 
 @media(max-width:576px) {
     section.displayThumb .card_wrapper_thumnail {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    section.displaySlide,
+    section.displayThumb {
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        background-color: transparent;
     }
 
 }
