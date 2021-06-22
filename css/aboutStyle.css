@@ -1,139 +1,148 @@
-@import url('utilities.css');
+@import url("utilities.css");
 :root {
-    --color_1: #000000;
-    --color_3: #282C2F;
-    --color_2: #222326;
-    --color_4: #393D40;
-    --color_5: #7D848A;
-    --color_6: #D9D9D9;
-    --color_7: #f2f2f2;
-    --color_8: #FF565D;
+  --color_1: #000000;
+  --color_3: #282c2f;
+  --color_2: #222326;
+  --color_4: #393d40;
+  --color_5: #7d848a;
+  --color_6: #d9d9d9;
+  --color_7: #f2f2f2;
+  --color_8: #ff565d;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .container {
-    max-width: 1652px;
-    padding: 0 15px;
-    margin: 0 auto;
-    overflow: hidden;
+  max-width: 1652px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
 }
-menu.right {
-    top: 0;
+
+/* right side menu */
+menu {
     z-index: 5;
     position: fixed;
-    left: 90%;
-    transform: translate(-90%);
+    left: 0;
+    top: 0;
     width: 6%;
     height: 100vh;
     background-color: transparent;
 }
-
-menu.right .profile {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+menu.right {
+  height: 35px;
+  width: 35px;
+  display: block;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  z-index: 9;
+  cursor: pointer;
 }
 
-menu.right .profile a>img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: contain;
+menu.right a {
+  height: 35px;
+  width: 35px;
+  z-index: 6;
+}
+
+menu.right a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 header {
-    text-transform: uppercase;
-    color: var(--color_7);
-    background-color: var(--color_2);
-    height: 57rem;
-    background-size: cover;
+  text-transform: uppercase;
+  color: var(--color_7);
+  width: 100%;
+  background-color: var(--color_2);
+  height: 91vh;
+  background-size: cover;
 }
 
 nav {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 nav h1 {
-    font-size: 1rem;
-    text-align: center;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .baner .baner_text {
-    padding: 10rem 0rem;
-    position: relative;
-    z-index: 1;
-    text-decoration: none;
+  padding: 10rem 0rem;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
 }
 
 .baner .baner_text a {
-    text-decoration: none;
-    color: var(--color_7);
+  text-decoration: none;
+  color: var(--color_7);
 }
 
 .baner .baner_text h4 {
-    font-size: 4rem;
-    font-weight: 400;
-    margin-bottom: -5.5rem;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: -3.5rem;
 }
 
 .baner .baner_text h1 {
-    font-size: 15rem;
-    font-weight: 600;
-    margin-left: -0.5rem;
-    text-decoration: none;
+  font-size: 15rem;
+  font-weight: 600;
+  margin-left: -0.5rem;
+  text-decoration: none;
 }
 
 .baner .baner_text h1:nth-child(1) {
-    margin-bottom: -7.5rem;
+  margin-bottom: -5.5rem;
 }
 
 .baner .baner_text a:nth-child(2):before {
-    text-decoration: none;
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 90%;
-    transform: translateX(-100%);
-    height: 1px;
-    width: 20rem;
-    border-bottom: 5px solid var(--color_8);
+  text-decoration: none;
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 90%;
+  transform: translateX(-100%);
+  height: 1px;
+  width: 20rem;
+  border-bottom: 5px solid var(--color_8);
 }
 
 .baner .baner_image img {
-    position: absolute;
-    margin-top: -1rem;
-    margin-left: -27rem;
-    z-index: 0;
-    width: 56.7%;
+  position: absolute;
+  margin-top: -1rem;
+  right: 0;
+  z-index: 0;
+  width: 56.7%;
 }
 
 section.about {
-    padding: 20rem;
+  padding: 20rem;
 }
 
 section.about h1 {
-    position: absolute;
-    margin-left: 30%;
-    margin-top: 2rem;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 2rem;
 }
 
 section.about .image {
-    position: relative;
-    height: 35rem;
-    width: 155vmax;
+  position: relative;
+  height: 35rem;
+  width: 155vmax;
 }
 
 section.about .image .img_1 img,
@@ -143,302 +152,756 @@ section.about .image .img_4 img,
 section.about .image .img_5 img,
 section.about .image .img_6 img,
 section.about .image .img_7 img {
-    position: absolute;
+  position: absolute;
 }
 
 section.about .image .img_5 img {
-    z-index: 5;
-    height: 34.5rem;
+  z-index: 5;
+  height: 34.5rem;
 }
 
 section.about .image .img_2 img {
-    z-index: 2;
-    height: 13rem;
-    bottom: 0;
-    margin-left: 11rem;
-    margin-bottom: 2rem;
+  z-index: 2;
+  height: 13rem;
+  bottom: 0;
+  margin-left: 11rem;
+  margin-bottom: 2rem;
 }
 
 section.about .image .img_6 img {
-    z-index:10 ;
-    height: 12rem;
-    bottom: 0;
-    left: 0;
+  z-index: 10;
+  height: 12rem;
+  bottom: 0;
+  left: 0;
 }
 
 section.about .image .img_7 img {
-    z-index: 10;
-    height: 10rem;
-    bottom: 0;
-    margin-left: 10rem;
+  z-index: 10;
+  height: 10rem;
+  bottom: 0;
+  margin-left: 10rem;
 }
 
 section.about .image .img_4 img {
-    z-index: 3;
-    width: 15rem;
-    bottom: 0;
-    margin-left: 9rem;
-    margin-bottom: 1rem;
+  z-index: 3;
+  width: 15rem;
+  bottom: 0;
+  margin-left: 9rem;
+  margin-bottom: 1rem;
 }
 
 section.about .image .img_1 img {
-    height: 14rem;
-    top: 0;
-    margin-left: 13rem;
-    margin-bottom: 0.5rem;
+  height: 14rem;
+  top: 0;
+  margin-left: 13rem;
+  margin-bottom: 0.5rem;
 }
 
 section.about .image .img_3 img {
-    height: 17rem;
-    top: 0;
-    margin-top: 6rem;
-    margin-left: 0rem;
+  height: 17rem;
+  top: 0;
+  margin-top: 6rem;
+  margin-left: 0rem;
 }
 
 section.about .about_text {
-    text-align: justify;
-    width: max-content;
+  text-align: justify;
+  width: max-content;
 }
 
 section.about .about_text h3 {
-    color: var(--color_2);
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 12rem;
-    margin-bottom: 1.5rem;
+  color: var(--color_2);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 12rem;
 }
 
 section.about .about_text button {
-    position: absolute;
-    right: 0;
-    margin-right: 8rem;
-    margin-top: 6rem;
+  position: absolute;
+  right: 0;
+  margin-right: 8rem;
+  margin-top: 7rem;
 }
 
 section.specializtion {
-    border-top: 1px solid var(--color_5);
-    padding: 10rem;
+  border-top: 1px solid var(--color_5);
+  padding: 10rem;
 }
 
 section.specializtion h1 {
-    z-index: 15;
-    text-align: right;
-    left: 50%;
+  z-index: 15;
+  text-align: right;
+  left: 50%;
 }
 
 section.specializtion img {
-    height: 40rem;
+  height: 40rem;
 }
 
 section.specializtion .info,
 section.video .info {
-    color: var(--color_2);
-    position: relative;
+  color: var(--color_2);
+  position: relative;
 }
 
 section.specializtion .info h2 {
-    position: absolute;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 9rem;
-    bottom: 0;
-    margin-left: -4rem;
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 9rem;
+  bottom: 0;
+  margin-left: -4rem;
 }
 
 section.specializtion .info h2:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 100%;
-    height: 1px;
-    width: 50rem;
-    border-bottom: 2px solid var(--color_2);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 1px;
+  width: 50rem;
+  border-bottom: 2px solid var(--color_2);
 }
 
 section.specializtion .info p {
-    font-size: 1rem;
-    margin-top: 31.5rem;
-    top: 0;
-    font-weight: 400;
-    margin-left: -2rem;
+  font-size: 1rem;
+  margin-top: 31.5rem;
+  top: 0;
+  font-weight: 400;
+  margin-left: -2rem;
 }
 
 section.video {
-    border-top: 1px solid var(--color_5);
-    padding: 10rem;
-    position: relative;
+  border-top: 1px solid var(--color_5);
+  padding: 10rem;
+  position: relative;
 }
 
 section.video:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 30rem;
-    background-color: var(--color_6);
-    left: 0;
-    bottom: 0;
-    clip-path: polygon(0 69%, 0% 100%, 100% 100%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30rem;
+  background-color: var(--color_6);
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 69%, 0% 100%, 100% 100%);
 }
 
 section.video h2 {
-    z-index: 20;
-    font-size: 3rem;
-    color: var(--color_2);
-    font-weight: 600;
+  z-index: 20;
+  font-size: 3rem;
+  color: var(--color_2);
+  font-weight: 600;
 }
 
 section.video .video_1 img,
 section.video .video_2 img {
-    width: 40%;
-    cursor: pointer;
+  width: 40%;
+  cursor: pointer;
 }
 
 section.video .video_1 {
-    transform: translateX(50%);
+  transform: translateX(50%);
 }
 
 section.video .video_2 {
-    transform: translateX(20%);
-    margin-top: 3rem;
+  transform: translateX(20%);
+  margin-top: 3rem;
 }
 
 section.video .video_1 .info h2,
 section.video .video_2 .info h2 {
-    position: absolute;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 4rem;
-    bottom: 0;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  bottom: 0;
 }
 
 section.video .video_2 .info h2 {
-    margin-left: -4rem;
+  margin-left: -4rem;
 }
 
 section.contact {
-    padding: 8rem;
-    height: 40vmax;
-    background-color: var(--color_2);
-    position: relative;
+  padding: 8rem;
+  height: 40vmax;
+  background-color: var(--color_2);
+  position: relative;
 }
 
 section.contact .box {
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 128vmax;
-    background-color: var(--color_3);
-    left: 0;
-    bottom: 0;
-    clip-path: polygon(0 69%, 0% 100%, 100% 100%);
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 128vmax;
+  background-color: var(--color_3);
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 69%, 0% 100%, 100% 100%);
 }
 
 section.contact .contact_info,
 section.contact .social {
-    position: absolute;
-    padding: 5rem 0;
-    text-align: center;
-    color: var(--color_6);
-    z-index: 2;
+  position: absolute;
+  padding: 5rem 0;
+  text-align: center;
+  color: var(--color_6);
+  z-index: 2;
 }
 
 section.contact .contact_info {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section.contact .contact_info h3,
 section.contact .social h3 {
-    font-size: 1rem;
-    margin-bottom: 3rem;
+  font-size: 1rem;
+  margin-bottom: 3rem;
 }
 
 section.contact .contact_info a {
-    text-decoration: none;
-    font-size: 5rem;
-    cursor: pointer;
-    color: var(--color_8);
+  text-decoration: none;
+  font-size: 5rem;
+  cursor: pointer;
+  color: var(--color_8);
 }
 
 section.contact .contact_info a:nth-child(2):hover {
-    color: var(--color_6);
+  color: var(--color_6);
 }
 
 section.contact .contact_info a:nth-child(3) {
-    font-size: 3rem;
-    color: var(--color_6);
+  font-size: 3rem;
+  color: var(--color_6);
 }
 
 section.contact .contact_info p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 section.contact .social {
-    top: 90%;
-    left: 55%;
-    transform: translate(-90%, -55%);
+  top: 90%;
+  left: 55%;
+  transform: translate(-90%, -55%);
 }
 
 section.contact .social h3 {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 section.contact .social a {
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--color_6);
-    margin-right: 1rem;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color_6);
+  margin-right: 1rem;
 }
 
 section.contact .social a:hover {
-    color: var(--color_8);
+  color: var(--color_8);
 }
 
 footer {
-    background-color: var(--color_6);
-    text-align: center;
+  background-color: var(--color_6);
+  text-align: center;
 }
 
 footer img {
-    margin-top: 2rem;
-    height: 20rem;
-    bottom: 0;
+  margin-top: 2rem;
+  height: 20rem;
+  bottom: 0;
 }
 
 footer .copyright {
-    padding: 1rem;
-    background-color: var(--color_7);
-    height: 3rem;
+  padding: 1rem;
+  background-color: var(--color_7);
+  height: 3rem;
 }
 
 footer .copyright p {
-    margin-left: 2rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--color_2);
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color_2);
 }
 
 footer .copyright p a {
-    text-decoration: none;
-    color: var(--color_8);
+  text-decoration: none;
+  color: var(--color_8);
 }
 
 footer .copyright p a:hover {
-    color: var(--color_2);
+  color: var(--color_2);
 }
 
 footer .copyright .social {
-    transform: translateX(430%);
+  transform: translateX(430%);
 }
 
 footer .copyright .social a {
-    margin-right: 1rem;
-    color: var(--color_2);
+  margin-right: 1rem;
+  color: var(--color_2);
 }
 
 footer .copyright .social a:hover {
-    color: var(--color_8);
+  color: var(--color_8);
+}
+
+@media (max-width: 1692px) {
+  .container {
+    max-width: 1652px;
+    overflow: hidden;
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .container{
+    overflow: hidden;
+  }
+
+   menu {
+        height: 10vh;
+    }
+  header {
+    height: 75vh;
+    position: relative;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  nav h1 {
+    font-size: 0.8rem;
+  }
+
+  .baner .baner_text {
+    position: absolute;
+    padding: 5rem 0rem;
+    bottom: 0;
+  }
+
+  .baner .baner_text h4 {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+  }
+
+  .baner .baner_text h1 {
+    font-size: 8rem;
+    margin-left: 0rem;
+  }
+
+  .baner .baner_text h1:nth-child(1) {
+    margin-bottom: -2.5rem;
+  }
+
+  .baner .baner_text a:nth-child(2):before {
+    width: 13rem;
+  }
+
+  .baner .baner_image img {
+    position: absolute;
+    margin-top: 0rem;
+    width: 100%;
+    bottom: 0;
+  }
+
+  section.about {
+    padding: 0.8rem;
+    padding-bottom: 2.5rem;
+  }
+
+  section.about h1 {
+    margin-left: 40%;
+    font-size: 6rem;
+    margin-top: 0.5rem;
+  }
+
+  section.about .image {
+    position: relative;
+    margin-top: 5%;
+    height: 25rem;
+    width: 165vmax;
+  }
+
+  section.about .image .img_5 img {
+    height: 24.5rem;
+  }
+
+  section.about .image .img_2 img {
+    height: 8rem;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+  }
+
+  section.about .image .img_6 img {
+    height: 7rem;
+    left: 8%;
+  }
+
+  section.about .image .img_7 img {
+    height: 5.5rem;
+    margin-left: 8rem;
+  }
+
+  section.about .image .img_4 img {
+    width: 9rem;
+    margin-left: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  section.about .image .img_1 img {
+    height: 10rem;
+    margin-left: 9rem;
+  }
+
+  section.about .image .img_3 img {
+    height: 12rem;
+    margin-top: 4rem;
+  }
+
+  section.about .about_text {
+    text-align: justify;
+    width: max-content;
+  }
+
+  section.about .about_text h3 {
+    font-size: 1.1rem;
+    margin-top: 12rem;
+  }
+
+  section.about .about_text button {
+    right: -3%;
+    margin-top: 2rem;
+  }
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .btn img {
+    height: 1rem;
+    margin-left: 0.8rem;
+    margin-right: 0rem;
+  }
+
+  section.specializtion {
+    padding: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  section.specializtion h1 {
+    font-size: 5rem;
+    left: 35%;
+  }
+
+  section.specializtion img {
+    margin-top: 4rem;
+    height: 20rem;
+  }
+
+  section.specializtion .info h2 {
+    font-size: 1.1rem;
+    margin-bottom: 5.9rem;
+    margin-left: -4rem;
+  }
+
+  section.specializtion .info p {
+    font-size: 0.6rem;
+    margin-top: 18.5rem;
+    margin-left: -2.5rem;
+  }
+
+  section.video {
+    padding: 1rem;
+  }
+
+  section.video:before {
+    height: 20rem;
+  }
+
+  section.video h2 {
+    font-size: 2rem;
+  }
+
+  section.video .video_2 {
+    margin-top: 2rem;
+  }
+
+  section.video .video_1 .info h2,
+  section.video .video_2 .info h2 {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  section.contact {
+    padding: 1rem;
+  }
+
+  section.contact .contact_info h3,
+  section.contact .social h3 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  section.contact .contact_info a {
+    font-size: 4rem;
+  }
+
+  section.contact .contact_info a:nth-child(3) {
+    font-size: 2rem;
+  }
+
+  section.contact .contact_info p {
+    font-size: 1.2rem;
+  }
+
+  section.contact .social {
+    top: 97%;
+    left: 63%;
+    transform: translate(-97%, -63%);
+  }
+
+  section.contact .social a {
+    font-size: 1.2rem;
+  }
+
+  footer img {
+    height: 15rem;
+  }
+  footer .flex {
+    flex-direction: column;
+  }
+
+  footer .copyright {
+    height: 5rem;
+  }
+
+  footer .copyright p {
+    font-size: 1.1rem;
+    margin-left: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  footer .copyright .social {
+    transform: translateX(0%);
+  }
+
+  footer .copyright .social a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container{
+    overflow: hidden;
+  }
+
+header {
+  height: 95vh;
+}
+
+.baner .baner_text {
+  padding: 5rem 0rem;
+  bottom: 0;
+}
+
+.baner .baner_text h4 {
+  font-size: 1.7rem;
+  margin-bottom: -1.6rem;
+}
+
+.baner .baner_text h1 {
+  font-size: 5rem;
+  margin-left: 0rem;
+}
+
+
+.baner .baner_text a:nth-child(2):before {
+  width: 10rem;
+}
+
+.baner .baner_image img {
+  width: 45rem;
+}
+
+section.about {
+  padding-bottom: 5.5rem;
+}
+section.about h1 {
+  margin-left: 40%;
+  font-size: 2.5rem;
+}
+section.about .flex {
+  flex-direction: column;
+}
+section.about .image {
+  margin-top: 25%;
+  height: 20rem;
+  width: 20vmax;
+}
+
+section.about .image .img_5 img {
+  height: 19.5rem;
+}
+
+section.about .image .img_2 img {
+  height: 7rem;
+  margin-left: 5rem;
+}
+
+section.about .image .img_6 img {
+  height: 5.5rem;
+}
+
+section.about .image .img_7 img {
+  height: 4.5rem;
+  margin-left: 6rem;
+}
+
+section.about .image .img_4 img {
+  width: 7.5rem;
+  margin-left: 5rem;
+}
+
+section.about .image .img_1 img {
+  height: 8rem;
+  margin-left: 7.5rem;
+}
+
+section.about .image .img_3 img {
+  height: 8.5rem;
+  margin-top: 4rem;
+}
+
+section.about .about_text {
+  width: 100%;
+}
+
+section.about .about_text h3 {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+section.about .about_text button {
+  right: -25%;
+  margin-top: 1rem;
+}
+
+section.about .about_text .flex{
+  flex-direction: row;
+}
+
+.btn {
+  padding: 0.4rem 0.8rem;
+}
+
+section.specializtion {
+  padding: 0.5rem;
+  padding-bottom: 4rem;
+}
+section.specializtion .flex {
+  flex-direction: column;
+}
+section.specializtion h1 {
+  font-size: 2.5rem;
+  left: 29%;
+}
+
+section.specializtion img {
+  height: 15.5rem;
+}
+section.specializtion .info {
+text-align: center;
+  width: 100%;
+}
+section.specializtion .info h2 {
+  font-size: 1rem;
+  margin-bottom: 9rem;
+  margin-left: 0rem;
+}
+
+section.specializtion .info h2:before {
+  top: 112%;
+}
+
+section.specializtion .info p {
+  font-size: 0.8rem;
+  margin-top: 5.5rem;
+  margin-left: 0rem;
+}
+
+section.video {
+  padding: 0.5rem;
+}
+
+section.video:before {
+  height: 10rem;
+}
+
+section.video h2 {
+  font-size: 1.1rem;
+}
+
+section.video .video_2 {
+  margin-top: 1rem;
+}
+
+section.video .video_1 .info h2,
+section.video .video_2 .info h2 {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+section.contact {
+  padding: 0.5rem;
+}
+
+section.contact .contact_info h3,
+section.contact .social h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+section.contact .contact_info a {
+  font-size: 2rem;
+}
+
+section.contact .contact_info a:nth-child(3) {
+  font-size: 1.2rem;
+}
+
+section.contact .contact_info p {
+  font-size: 0.9rem;
+}
+
+section.contact .social {
+  top: 93%;
+  left: 69%;
+  transform: translate(-90%, -57%);
+  width: 50%;
+}
+
+section.contact .social a {
+  font-size: 0.8rem;
+}
+
+footer img {
+  height: 13rem;
+}
+footer .flex {
+  flex-direction: column;
+}
+
+footer .copyright p {
+  font-size: 0.8rem;
+}
+
+footer .copyright .social a {
+  font-size: 0.8rem;
+}
 }
