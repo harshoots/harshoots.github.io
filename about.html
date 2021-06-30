@@ -2,166 +2,198 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"content="width=device-width, initial-scale=1.0">
-<title>harshoort</title>
-<link rel="icon"type="image/png"sizes="32x32"href="image/favicon-32x32.png">
-<link rel="stylesheet"type="text/css"href="css/aboutStyle.css">
-<link rel="stylesheet"type="text/css"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect"href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css"rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>harshoort</title>
+   <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+   <link rel="stylesheet" type="text/css" href="css/aboutStyle.css">
+   <link rel="stylesheet" type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body onload="preLoader()">
-<!-- Preloader -->
-<div id="loader"></div>
+   <!-- Preloader -->
+   <div id="loader"></div>
 
-<menu class="right">
-<a href="about.html"><img src="image/profile.svg"alt=""></a>
+
+<menu class="left">
+<div id="h" class="hamburger-menu" onclick="myFunction()">
+<div></div>
+<div></div> 
+<div></div>
+</div>
+<div class="menu_list">
+<ul>
+<li><a href="home.html">featured</a></li>
+<li><a href="nature.html">nature</a></li>
+<li><a href="wedding.html">wedding</a></li>
+<li><a href="modele.html">modele</a></li>
+<li><a href="street.html">street</a></li>
+<li><a href="landscape.html">landscape</a></li>
+<li><a href="portrait.html">portrait</a></li>
+<li><a href="about.html">Profile</a></li>
+</ul>
+</div>
 </menu>
 
-<!-- hearder section -->
-<header>
-<div class="container ">
-<nav class="itmes-center">
-<h1>harshoort</h1>
-</nav>
-<div class="baner flex">
-<div class="baner_text">
-<h4 >I’ AM</h4>
-<a href="#about">
-<h1 id="h_text_1">HARSH</h1>
-</a>
-<a href="#contact">
-<h1 id="h_text_2">THAKUR</h1>
-</a>
-</div>
-<div class="baner_image">
-<img src="image/hearder img.png"alt="">
-</div>
-</div>
-</div>
-</header>
-<section id="about"class="about">
-<h1 data-aos="fade-left"data-aos-offset="600"data-aos-duration="1500"data-aos-easing="linear"data-aos-delay="50">about me</h1>
-<div class="container flex">
-<div class="image">
+   <!-- hearder section -->
+   <header>
+      <div class="container ">
+         <nav class="itmes-center">
+           <a href="home.html">Harshoots</a>
+         </nav>
+         <div class="baner flex">
+            <div class="baner_text">
+               <h4>I’ AM</h4>
+               <a href="#about">
+                  <h1 id="h_text_1">HARSH</h1>
+               </a>
+               <a href="#contact">
+                  <h1 id="h_text_2">THAKUR</h1>
+               </a>
+            </div>
+            <div class="baner_image">
+               <img src="image/hearder img.png" alt="">
+            </div>
+         </div>
+      </div>
+   </header>
+   <section id="about" class="about">
+      <h1 data-aos="fade-down" data-aos-offset="600" data-aos-duration="1500" data-aos-easing="linear"
+         data-aos-delay="50">about me</h1>
+      <div class="container flex">
+         <div class="image">
+            <div class="img_1" data-aos="fade-up" data-aos-offset="530">
+               <img src="image/aboutImg-2.png" alt="">
+            </div>
+            <div class="img_3">
+               <img src="image/aboutImg-6.png" alt="" data-aos="fade-left" data-aos-offset="500">
+            </div>
+            <div class="img_1">
+               <img src="image/aboutImg-2.png" alt="" data-aos="zoom-in" data-aos-offset="500">
+            </div>
+            <div class="img_4">
+               <img src="image/aboutImg-3.png" alt="" data-aos="fade-right" data-aos-offset="200">
+            </div>
+            <div class="img_5">
+               <img src="image/aboutImg-1.png" alt="" data-aos="zoom-in" data-aos-offset="500">
+            </div>
+            <div class="img_7">
+               <img src="image/aboutImg-5.png" alt="" data-aos="zoom-in" data-aos-offset="300">
+            </div>
+            <div class="img_6">
+               <img src="image/aboutImg-4.png" data-aos="zoom-in" data-aos-offset="300">
+            </div>
+            <div class="img_2">
+               <img src="image/aboutImg-7.png" alt="" data-aos="fade-right" data-aos-offset="200">
+            </div>
+         </div>
+         <div class="about_text itmes-center justify-between">
+            <h3 data-aos="fade-left" data-aos-offset="400">
+               I’m Harsh- aka your newest friend, the man behind the camera, and a professional third wheeler. I am SO
+               happy you found yourself here on my site! I'm a wedding and portrait photographer. I've been shooting
+               since I was in 10th grade (before I ever had
+               my driver’s license!). My heart and soul come alive when I photograph the beauty of human connection in
+               its truest, rawest form.
+            </h3> <a href="#"><button class="btn flex" data-aos="zoom-out-left" data-aos-offset="300"> resume <img
+                     src="image/download.svg"></button></a>
+         </div>
+      </div>
+   </section>
+   <section class="specializtion">
+      <h1 data-aos="fade-up" data-aos-offset="600" data-aos-duration="1500" data-aos-easing="linear"
+         data-aos-delay="50">specializtion</h1>
+      <div class="container flex">
+         <img src="image/ilovepdf_merged-page-003.jpg" alt="" data-aos="fade-left" data-aos-offset="500">
+         <div class="info">
+            <h2 data-aos="fade-right" data-aos-offset="200" data-aos-duration="500" data-aos-easing="linear"
+               data-aos-delay="40">
+               Photography Basics and Beyond: From Smartphone to DSLR
+            </h2>
+            <p data-aos="fade-right" data-aos-offset="200" data-aos-duration="500" data-aos-easing="linear"
+               data-aos-delay="45">
+               I has successfully completed the online, non-credit Specialization Photography Basics and Beyond:From
+               Smartphone to DSLR As a Learner in Photography Basics and Beyond:From Smartphone to DSLR, I studied the
+               foundational principles of photographic technique, digital imaging from camera exposure to print, and the
+               organization of pictures according to the principles of Design into successful compositions.
+            </p>
+         </div>
+      </div>
+   </section>
+   <section class="video">
+      <div class="container">
+         <h2 data-aos="zoom-in-up" data-aos-offset="200">Why would you hire me?</h2>
+         <div class="video_1 flex">
+            <div class="info">
+               <h2 data-aos="fade-right" data-aos-offset="200">
+                  Wedding Photography
+               </h2>
+            </div>
+            <img src="image/Video 1.png" alt="" data-aos="zoom-in-right" data-aos-offset="200" data-aos-easing="linear"
+               data-aos-delay="40">
+         </div>
+         <div class="video_2 flex">
+            <img src="image/video 2.png" alt="" data-aos="zoom-in-left" data-aos-offset="200" data-aos-easing="linear"
+               data-aos-delay="40">
+            <div class="info">
+               <h2 data-aos="fade-left" data-aos-offset="200">
+                  Model Photography
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="contact" class="contact">
+      <div class="box">
+      </div>
+      <div class="container">
+         <div class="contact_info">
+            <h3 data-aos="zoom-in" data-aos-offset="200">Contact</h3>
+            <a data-aos="zoom-in" data-aos-offset="200" href="mailto: harshoots@gmail.com">harshoots@gmail.com<br></a>
+            <a data-aos="zoom-in" data-aos-offset="200" href="tel:+918279984900">
+               +91-8279984900
+            </a>
+            <p data-aos="zoom-in" data-aos-offset="200">Amla Tola, Katihar, Bihar- 854105</p>
+         </div>
+         <div class="social">
+            <h3 data-aos="zoom-in" data-aos-offset="200">Social</h3>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+         </div>
+      </div>
+   </section>
 
-<div class="img_1"data-aos="fade-up"data-aos-offset="530">
-<img src="image/aboutImg-2.png"alt="">
-</div>
-<div class="img_3">
-<img src="image/aboutImg-6.png"alt=""data-aos="fade-left"data-aos-offset="500">
-</div>
-<div class="img_1">
-<img src="image/aboutImg-2.png"alt=""data-aos="zoom-in"data-aos-offset="500">
-</div>
-<div class="img_4">
-<img src="image/aboutImg-3.png"alt=""data-aos="fade-right"data-aos-offset="200">
-</div>
-<div class="img_5">
-<img src="image/aboutImg-1.png"alt=""data-aos="zoom-in"data-aos-offset="500">
-</div>
-<div class="img_7">
-<img src="image/aboutImg-5.png"alt=""data-aos="zoom-in"data-aos-offset="300">
-</div>
-<div class="img_6">
-<img src="image/aboutImg-4.png"data-aos="zoom-in"data-aos-offset="300">
-</div>
-<div class="img_2">
-<img src="image/aboutImg-7.png"alt=""data-aos="fade-right"data-aos-offset="200">
-</div>
-</div>
-<div class="about_text itmes-center justify-between">
-<h3 data-aos="fade-left"data-aos-offset="400">
-I’m Harsh- aka your newest friend, the man behind the camera, and a professional third wheeler. I am SO happy you found yourself here on my site! I'm a wedding and portrait photographer. I've been shooting since I was in 10th grade (before I ever had
-my driver’s license!). My heart and soul come alive when I photograph the beauty of human connection in its truest, rawest form.
-</h3> <a href="#"><button class="btn btn-primary flex"data-aos="zoom-out-left"data-aos-offset="300">resume<img src="image/download.svg"></button></a>
-</div>
-</div>
-</section>
-<section class="specializtion">
-<h1 data-aos="fade-up"data-aos-offset="600"data-aos-duration="1500"data-aos-easing="linear"data-aos-delay="50">specializtion</h1>
-<div class="container flex">
-<img src="image/ilovepdf_merged-page-003.jpg"alt=""data-aos="fade-left"data-aos-offset="500">
-<div class="info">
-<h2 data-aos="fade-right"data-aos-offset="200"data-aos-duration="500"data-aos-easing="linear"data-aos-delay="40">
-Photography Basics and Beyond: From Smartphone to DSLR
-</h2>
-<p data-aos="fade-right"data-aos-offset="200"data-aos-duration="500"data-aos-easing="linear"data-aos-delay="45">
-I has successfully completed the online, non-credit Specialization Photography Basics and Beyond:From Smartphone to DSLR As a Learner in Photography Basics and Beyond:From Smartphone to DSLR, I studied the foundational principles of photographic technique, digital imaging from camera exposure to print, and the organization of pictures according to the principles of Design into successful compositions.
-</p>
-</div>
-</div>
-</section>
-<section class="video">
-<div class="container">
-<h2 data-aos="zoom-in-up"data-aos-offset="200">Why would you hire me?</h2>
-<div class="video_1 flex">
-<div class="info">
-<h2 data-aos="fade-right"data-aos-offset="200">
-Wedding Photography
-</h2>
-</div>
-<img src="image/Video 1.png"alt=""data-aos="zoom-in-right"data-aos-offset="200"data-aos-easing="linear"data-aos-delay="40">
-</div>
-<div class="video_2 flex">
-<img src="image/video 2.png"alt=""data-aos="zoom-in-left"data-aos-offset="200"data-aos-easing="linear"data-aos-delay="40">
-<div class="info">
-<h2 data-aos="fade-left"data-aos-offset="200">
-Model Photography
-</h2>
-</div>
-</div>
-</div>
-</section>
-<section id="contact"class="contact">
-<div class="box">
-</div>
-<div class="container">
-<div class="contact_info">
-<h3>Contact</h3>
-<a data-aos="zoom-in"data-aos-offset="200"href="mailto: harshoots@gmail.com">harshoots@gmail.com <br></a>
-<a data-aos="zoom-in"data-aos-offset="200"href="tel:+918279984900">
-+91-8279984900
-</a>
-<p data-aos="zoom-in"data-aos-offset="200">Amla Tola, Katihar, Bihar- 854105</p>
-</div>
-<div class="social">
-<h3>Social</h3>
-<a href="#"><i class="fa fa-facebook"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-instagram"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-twitter "aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-linkedin"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-dribbble"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-behance"aria-hidden="true"></i></a>
-</div>
-</div>
-</section>
-<footer>
-<img src="image/hand.png"alt=""data-aos="zoom-in-up"data-aos-delay="40">
-<div class="copyright flex">
-<p>Copyright © 2021 <a href="">msahilhussain</a>. All Rights Reserved.</p>
-<div class="social">
-<a href="#"><i class="fa fa-github"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-facebook"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-instagram"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-twitter "aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-pinterest"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-linkedin"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-dribbble"aria-hidden="true"></i></a>
-<a href="#"><i class="fa fa-behance"aria-hidden="true"></i></a>
-</div>
-</div>
-</footer>
+   <footer>
+      <img src="image/hand.png" alt="" data-aos="zoom-in-up" data-aos-delay="40">
+      <div class="copyright flex">
+         <p>Copyright © 2021 <a href="https://mdsahilhussain.github.io">msahilhussain</a>. All Rights Reserved.</p>
+         <div class="social">
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+         </div>
+      </div>
+   </footer>
 
-<!-- scrollAnimation -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init();
-</script>
-<script src="javaScript/main.js"></script>
+   <!-- scrollAnimation -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
+   <script src="javaScript/main.js"></script>
 
 </body>
 
