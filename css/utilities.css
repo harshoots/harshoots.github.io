@@ -11,6 +11,7 @@
 
 #loader {
     top: 0;
+    left: 0;
     display: block;
     position: fixed;
     width: 100%;
